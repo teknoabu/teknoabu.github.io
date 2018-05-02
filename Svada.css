@@ -1,0 +1,44 @@
+body {
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Overskrift */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  font-family: monospace;
+  text-align: center;
+  background: white;
+}
+
+/* Kolonner */
+.leftcolumn {
+  float: left;
+  width: 72%;
+}
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Andre grafiske elementer */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+}
